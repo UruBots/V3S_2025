@@ -7,7 +7,7 @@
 #include <SPI.h>
 #include <RF24.h>
 
-RF24 radio(8, 10); // CE, CSN
+RF24 radio(7, 8); // CE, CSN
 
 const byte identificacion[6] = "00001";
 
@@ -23,17 +23,20 @@ ModbusIP mb;
 void setup() {
   
   Serial.begin(9600);
-  WiFi.begin("Wifi", "12345678");
-  
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
+    Serial.println("Setting WifiLocal.....");
+    boolean result = WiFi.softAP("VssCom", "12345678");
+    if(result == true)
+    {
+        Serial.println("");
+        Serial.println("WiFi conectado");  
+        Serial.println("Direccion IP: ");
+        Serial.println(WiFi.localIP()); 
+    }
+    else
+    {
+        Serial.println("Failed!");
+    }
 
-  Serial.println("");
-  Serial.println("WiFi conectado");  
-  Serial.println("Direccion IP: ");
-  Serial.println(WiFi.localIP()); 
 
   
   radio.begin();
