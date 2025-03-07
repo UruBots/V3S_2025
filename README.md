@@ -1,4 +1,5 @@
-Tienes los codigos bases de arduino y python. Para mas informacion ingresa en el Articulo del proyecto: httpsssdssdsdsds
+Ponto atual: Placa pronta, conexões prontas, funcionando comunicação serial.
 
-NOTA: Ahora mismo los codigos con comunicacion wifi estan sujetos a pruebas
-https://www.youtube.com/watch?v=7lblqsHRnzU
+Erros/Falhas: Fios escapando nos motores, switch com contato e solto,
+
+Falta: Montar a PCB no Proteus, fazer o novo modelo de placa.
