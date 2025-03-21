@@ -1,5 +1,5 @@
-Ponto atual: Placa pronta, conexões prontas, funcionando comunicação serial.
+Ponto atual: PCB Pronta,Teste bem sucedido 
 
-Erros/Falhas: Fios escapando nos motores, switch com contato e solto,
+Erros/Falhas: Conexões diferentes
 
-Falta: Montar a PCB no Proteus, fazer o novo modelo de placa.
+Falta: Fazer nova PCB
