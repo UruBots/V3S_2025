@@ -1,5 +1,5 @@
-Ponto atual: PCB Pronta,Teste bem sucedido 
+Ponto atual: PCB Pronta, teste feito
 
-Erros/Falhas: Conexões diferentes
+Erros/Falhas: Trilhas erradas 
 
-Falta: Fazer nova PCB
+Falta: Nova PCB
