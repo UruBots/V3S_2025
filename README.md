@@ -1,5 +1,5 @@
-Ponto atual: PCB Pronta, teste feito
+Ponto atual: PCB 1.2 pronta, componentes soldados
 
-Erros/Falhas: Trilhas erradas 
+Erros/Falhas: Possível falha Ponte H
 
-Falta: Nova PCB
+Falta: Testar PCB 1.2
