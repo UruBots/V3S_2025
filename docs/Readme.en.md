@@ -4,7 +4,7 @@
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=IN%20DEVELOPMENT&color=GREEN&style=for-the-badge"/>
 </p>
 
-![vss](https://github.com/user-attachments/assets/a9e7e197-5df7-4a00-863c-3f58627b3f20)
+![image](https://github.com/user-attachments/assets/85888ab1-4472-4e1d-974b-98f749e5b422)
 
 <h1 align="left"> Project Description </h1>
 
