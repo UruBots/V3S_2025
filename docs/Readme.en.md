@@ -1,3 +1,5 @@
+> Read this page in [Portuguese](docs/Readme.pt.md)
+
 <h1 align="left"> VSSS (Very Small Size Soccer)</h1>
 
 <p align="center">
@@ -6,102 +8,72 @@
 
 ![image](https://github.com/user-attachments/assets/85888ab1-4472-4e1d-974b-98f749e5b422)
 
-<h1 align="left"> Project Description </h1>
+## 📝 Project Description
 
-The **Very Small Size Soccer** (VSSS) category is one of the RoboCup divisions aimed at simulating soccer matches with small autonomous robots. Each team uses up to three circular robots with a maximum diameter of 7.5 cm, on a 1.5 m x 2 m field. The system is controlled by a camera positioned above the field, which sends real-time data to a central computer responsible for vision processing, strategy, and decision-making. Instructions are then transmitted to the robots via wireless communication.
+The VSSS (Very Small Size Soccer) category is an autonomous robotics competition where teams with up to 6 robots (each with a maximum diameter of 7.5 cm and height of 15 cm) compete on a 1.5 m × 1.3 m field. The robots are controlled by computer vision and artificial intelligence algorithms, making real-time decisions based on images captured by an overhead camera.
 
-VSSS integrates areas such as computer vision, artificial intelligence, control, and mobile robotics, making it an excellent platform for the practical development of autonomous solutions in real time. It also fosters teamwork, innovation, and competitive spirit among students and researchers.
+---
 
 ## 📚 Index
 
-- [Category Rules](#category-rules)
+- [Rules Summary](#rules-summary)
 - [Materials Used](#materials-used)
 - [Hardware](#hardware)
 - [Software](#software)
 - [How to Build My VSSS](#how-to-build-my-vsss)
 
-## Category Rules
-### Summary of Rules – VSSS (Very Small Size Soccer)
+---
 
-### Objective
-To simulate a soccer match between two teams of autonomous robots, focusing on strategy, control, and real-time decision-making.
+## 📏 Rules Summary
 
-### Robots
-- Max per team: 3 robots on the field (additional substitutes allowed).
-- Size: Each robot must fit within a cylinder 75 mm in diameter and 15 cm in height.
-- Autonomy: All robots must be fully autonomous, with no direct human control during the match.
+- **Robots**: up to 6 per team (3 on the field). Max size: 7.5 cm diameter, 15 cm height.  
+- **Field**: 1.5 m x 1.3 m, with standard markings.  
+- **Ball**: orange, approx. 4 cm in diameter.  
+- **Match**: 2 halves of 5 minutes.  
+- **Control**: fully autonomous, based on computer vision.  
+- **Infractions**: excessive contact, field exit, unfair obstruction.  
+- **Vision System**: overhead camera and real-time image processing software.
 
-### Field
-- Dimensions: 1.5 m x 2 m.
-- Format: Rectangular, with field markings similar to a standard soccer field (midfield, goal area, sidelines).
-- Walls: There are no walls — the ball and robots can go out through the sides (triggering a reposition).
+---
 
-### Vision and Control System
-- A camera positioned above the field captures the positions of the robots and the ball.
-- A central computer processes the information and decides the actions, sending commands to the robots via radio.
-- Each team has its own control system.
+## 🔧 Materials Used  
 
-### Match Duration
-- 2 halves of 5 minutes each, with a 1-minute break.
-- The clock only runs while the ball is in play.
-
-### Goal and Scoring
-- A goal is scored when the ball fully crosses the goal line.
-- The team with the most goals at the end of the match wins.
-- In case of a tie, there may be extra time or penalty shootouts (depending on the event).
-
-### Fouls and Penalties
-- Excessive physical contact between robots is penalized.
-- Robots cannot remain idle blocking the goal for too long ("obstruction" rule).
-- Out-of-control or malfunctioning robots must be quickly removed.
-- Penalties may include removing the robot for a few seconds or awarding ball possession to the other team.
-
-### Ball Repositions
-- When the ball goes out, the referee (or automatic system) repositions it appropriately.
-- The game resumes after the repositioning.
-
-### Technical Inspection
-Before the matches, robots are evaluated for:
-- Dimensions
-- Weight (if required)
-- Control system functionality
-- Autonomy (no external interference allowed)
-
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
-
-## Materials Used 
-1 VSSS Unit:
-- 1 Circuit Board (PCB or Breadboard)  
+1 VSSS Robot:
+- 1 Circuit Board (PCB/Protoboard)  
 - 1 Arduino NANO  
 - 1 NRF24L01 Module  
 - 1 MPU6050  
-- 1 Mini H-Bridge L298n  
+- 1 Mini H-Bridge (L298n)  
 - 2 DC Motors
 
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+---
 
-## Software
+## ⚙️ Hardware
 
-### PCB
-- Fusion 360
+VSSS robots are small, autonomous, and designed to operate with high precision in a compact space. The hardware system consists of:
 
-### Code
-*(Add description or links if available)*
+- **Structure**: compact chassis (up to 7.5 cm diameter, 15 cm height), lightweight and durable, usually 3D printed.
 
-### Simulation
-*(Add details if used)*
+- **Locomotion**: DC motors with encoders, using small, narrow wheels for movement.
 
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+- **Control**: an embedded board (Arduino, ESP32) that interprets radio commands and controls the motors in real time.
 
-## Hardware
+- **Communication**: radio module (typically 2.4 GHz) to receive commands from the central computer.
 
-#### Component Wiring
-*(Add diagrams or wiring instructions if possible)*
+- **Additional Electronics**: motor drivers (H-Bridge), sensors, and batteries for power.
 
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+---
 
-## How to Build My VSSS
+## 🧠 Software
 
-[Google Docs Guide (EN)](https://docs.google.com/document/d/1Gx1FeZU1V7xuebESt6DnqYbtGiYW-2jLfToopUDha7g/edit?usp=sharing)
+In the VSSS category, the system is divided into two main components: computer vision and robot control, typically developed in different programming languages to leverage their strengths.
 
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+- **Python** is used for the computer vision part, as it simplifies the use of libraries like **OpenCV** to process the overhead camera feed, detect the ball and robots, and generate real-time coordinates.
+
+- **C++** is used for robot control, offering better performance and precision when sending movement commands and executing decision-making algorithms.
+
+---
+
+## 🛠️ How to Build My VSSS
+
+👉 [Click here to view the step-by-step guide](https://docs.google.com/document/d/1Gx1FeZU
