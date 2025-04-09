@@ -1,4 +1,4 @@
-> Read this page in [Portuguese](Readme.md)
+> Read this page in [Portuguese](README.md)
 
 <h1 align="left"> VSSS (Very Small Size Soccer)</h1>
 
