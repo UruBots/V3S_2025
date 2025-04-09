@@ -75,4 +75,4 @@ In the VSSS category, the system is divided into two main components: computer v
 
 ## 🛠️ How to Build My VSSS
 
-👉 [Click here to view the step-by-step guide](https://docs.google.com/document/d/1Gx1FeZU
+(https://docs.google.com/document/d/1Gx1FeZU1V7xuebESt6DnqYbtGiYW-2jLfToopUDha7g/edit?usp=sharing)
